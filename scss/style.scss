@@ -13,7 +13,25 @@
   z-index: 100;
   width: 100%;
   height: $header-height;
+  display: flex;
+  align-items: center;
+
+  color: $light-color;
   background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+
+  &--light {
+    color: $dark-color;
+    background-color: $light-color;
+  }
+
+  &--animate {
+    top: -10px;
+  }
+
+  &__nav {
+    width: 100%;
+  }
 }
 
 .nav-list {
@@ -26,7 +44,6 @@
 
     font-size: 12px;
     font-weight: 700;
-    color: $light-color;
 
     text-transform: uppercase;
 
@@ -34,6 +51,18 @@
       color: $accent-color;
     }
   }
+
+  &__logo {
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.2s ease-in-out;
+
+    &--light {
+      background-color: $accent-color;
+    }
+  }
+
 }
 
 
@@ -60,6 +89,15 @@
     width: 100%;
 
     background-color: $light-color;
+  }
+
+  &--light {
+
+    &::before,
+    &::after,
+    & span {
+      background-color: $dark-color;
+    }
   }
 
   &::before,
@@ -102,10 +140,10 @@
   }
 }
 
+
 @media(max-width: 768px) {
   .header {
-    display: flex;
-    align-items: center;
+
     justify-content: end;
 
     &__menu-btn {
@@ -126,6 +164,10 @@
       &--active {
         left: 0;
       }
+
+      &--light {
+        background-color: $light-color;
+      }
     }
   }
 
@@ -135,7 +177,7 @@
     align-items: start;
     gap: 20px;
 
-    &__item--logo {
+    &__logo {
       position: fixed;
       top: 10px;
       left: 20px;
@@ -145,7 +187,6 @@
       border-radius: 50%;
     }
   }
-
 }
 
 //  main 
@@ -158,7 +199,7 @@
   color: $light-color;
 
   background-color: $dark-gray-color;
-  background-image: url('../images/main-bg-img.webp');
+  background-image: url('../images/main/main-bg-img.webp');
   background-size: cover;
   background-position: center;
 
@@ -226,7 +267,7 @@
 
   &__img {
     grid-row: 2/3;
-    background-image: url(../images/about-img.webp);
+    background-image: url(../images/about/about-img.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -284,7 +325,7 @@
 
   &__img {
     flex: 1;
-    background-image: url(../images/stages-img.webp);
+    background-image: url(../images/stages/stages-img.webp);
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -345,7 +386,7 @@
   &__img {
     width: 255px;
     height: 200px;
-    background-image: url(../images/bunner-img.webp);
+    background-image: url(../images/banner/banner-img.webp);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -365,7 +406,7 @@
 }
 
 @media (max-width: 1024px) {
-  .banner__container  {
+  .banner__container {
     flex-direction: column;
     text-align: center;
     gap: 20px;
@@ -453,6 +494,7 @@
   &__description {
     margin-bottom: 30px;
   }
+
   &__btn {
     margin-bottom: 20px;
   }
@@ -580,7 +622,7 @@
   color: $light-color;
 
   background-color: $dark-gray-color;
-  background-image: url(../images/connection-bg.webp);
+  background-image: url(../images/connection/connection-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -640,11 +682,11 @@
     }
 
     &--phone::before {
-      background-image: url(../images/phone.svg);
+      background-image: url(../images/connection/phone.svg);
     }
 
     &--mail::before {
-      background-image: url(../images/mail.svg);
+      background-image: url(../images/connection/mail.svg);
     }
   }
 }
@@ -749,6 +791,7 @@
     }
   }
 }
+
 @media (max-width: 425px) {
   .form {
     padding: 20px;
@@ -771,8 +814,10 @@
   border-radius: 50%;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+
   &:hover {
     background-color: $accent-color;
+
     & svg {
       stroke: #fff;
     }
