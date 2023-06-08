@@ -1,0 +1,82 @@
+html,
+body {
+	height: 100%;
+}
+
+.body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $text;
+  font-weight: 400;
+  color: $dark-gray-color;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.section-vertical {
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+}
+
+.section-title,
+.title,
+.sub-title {
+  font-family: $oswald;
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
+.section-title {
+  font-size: 12px;
+  color: $accent-color;
+}
+
+.title {
+  font-size: $h1;
+  color: $dark-color;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: $h2;
+  color: $dark-color;
+}
+
+.btn {
+  display: block;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000;
+
+  background-color: $accent-bg-color;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $accent-color;
+    background-color: $light-color;
+    outline: $accent-color solid 2px;
+  }
+}
+
