@@ -41,7 +41,7 @@
   position: relative;
   z-index: 5;
 
-  // display: none;
+  display: none;
   width: 40px;
   height: 40px;
   padding: 0;
@@ -110,20 +110,21 @@
 
     &__menu-btn {
       margin-right: 20px;
+      display: block;
     }
 
     &__nav {
       position: fixed;
-      top: -50%;
-      left: 0;
+      top: $header-height;
+      left: -100%;
       width: 100%;
       padding: 0;
-      transition: all 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.4);
+
+      transition: left 0.3s ease-in-out;
 
       &--active {
         left: 0;
-        top: $header-height;
-        background-color: rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -246,6 +247,12 @@
   }
 }
 
+@media(max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
 //  Stages
 
 .stages {
@@ -313,6 +320,12 @@
   }
 }
 
+@media(max-width: 768px) {
+  .stages__img {
+    display: none;
+  }
+}
+
 //  banner
 
 .banner {
@@ -351,6 +364,20 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .banner__container  {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner__title {
+    font-size: 30px;
+  }
+}
+
 // rates
 
 .rates {
@@ -366,11 +393,10 @@
   gap: 20px;
 }
 
-
-
 .rate {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 350px;
   color: $dark-color;
   background-color: $light-gray-color;
@@ -391,6 +417,7 @@
   }
 
   &__img {
+    width: 100%;
     height: 230px;
     object-fit: cover;
   }
@@ -426,7 +453,33 @@
   &__description {
     margin-bottom: 30px;
   }
+  &__btn {
+    margin-bottom: 20px;
+  }
+}
 
+@media(max-width: 1024px) {
+  .rates-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .rates-list {
+    flex-direction: column;
+  }
+
+  .rate {
+    width: 100%;
+
+    &__btn {
+      width: 50%;
+      align-self: center;
+    }
+  }
 }
 
 //  price
@@ -473,7 +526,11 @@
   }
 }
 
-
+@media (max-width: 768px) {
+  .price__container {
+    grid-template-columns: 1fr;
+  }
+}
 
 //  reviews
 
@@ -666,5 +723,58 @@
     color: $light-color;
     background-color: $accent-color;
     border-radius: 4px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .connection {
+    &__title {
+      font-size: 26px;
+    }
+  }
+
+  .form {
+    padding: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .connection {
+    height: auto;
+
+    &__container {
+      padding: 40px;
+      flex-direction: column;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .form {
+    padding: 20px;
+  }
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $accent-bg-color;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  &:hover {
+    background-color: $accent-color;
+    & svg {
+      stroke: #fff;
+    }
   }
 }

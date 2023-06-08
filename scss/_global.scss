@@ -59,6 +59,14 @@ body {
   color: $dark-color;
 }
 
+@media (max-width: 768px) {
+  .title {
+    font-size: $h1-mobile;
+  }
+  .sub-title {
+    font-size: $h2-mobile;
+  }
+}
 .btn {
   display: block;
   padding: 10px 20px;
