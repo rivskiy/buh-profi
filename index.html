@@ -18,28 +18,29 @@
 <body class="body">
   <!--                                header  -->
   <header class="header">
-    <nav class="header__nav-container container">
-      <ul class="nav">
+    <button class="header__menu-btn menu-btn" type="button"><span class="visually-hidden">Открыть меню</span><span></span></button>
+    <nav class="header__nav container">
+      <ul class="nav-list">
         <li>
-          <a class="nav__link" href="#">Главная</a>
+          <a class="nav-list__link" href="#">Главная</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">О нас</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#">О нас</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Этапы</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#stages">Этапы</a>
         </li>
-        <li>
-          <a href="#"><img src="./images/logo.png" alt=""></a>
+        <li class="nav-list__item nav-list__item--logo">
+          <a href="#"><img src="./images/logo.png" alt="Логотип"></a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Тарифы</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#rates">Тарифы</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Отзывы</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#reviews">Отзывы</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">Заказать</a>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="#connection">Заказать</a>
         </li>
       </ul>
     </nav>
@@ -62,7 +63,7 @@
     </section>
 
     <!--                                about  -->
-    <section class="about container section-vertical">
+    <section class="about container section-vertical" id="about">
       <div class="about__header">
         <h2 class="section-title">О нас</h2>
         <h3 class="about__title title">Компания БухПрофи</h3>
@@ -93,8 +94,8 @@
       <div class="about__img"></div>
     </section>
 
-    <!--                                about  -->
-    <section class="stages section-vertical">
+    <!--                                stages  -->
+    <section class="stages section-vertical" id="stages">
       <div class="stages__container container">
         <div class="stages__content">
           <h2 class="section-title">Этапы</h2>
@@ -141,8 +142,8 @@
       </div>
     </section>
 
-    <!--                                banner  -->
-    <section class="rates container section-vertical">
+    <!--                                rates  -->
+    <section class="rates container section-vertical" id="rates">
       <h2 class="section-title">Наши Тарифы</h2>
       <h3 class="rates__title title">Тарифы</h3>
       <ul class="rater__list rates-list">
@@ -271,7 +272,7 @@
     </section>
     <!--                                reviews  -->
 
-    <section class="reviews section-vertical container">
+    <section class="reviews section-vertical container" id="reviews">
       <h2 class="section-title">Отзывы</h2>
       <h3 class="reviews__tittle title">Пару слов от наших клиентов</h3>
       <div class="reviews__list swiper">
@@ -347,7 +348,7 @@
     </section>
     <!--                                reviews  -->
 
-    <section class="connection">
+    <section class="connection" id="connection">
       <div class="connection__overlay">
         <h2 class="visually-hidden">Обратная Связь</h2>
         <div class="connection__container container">

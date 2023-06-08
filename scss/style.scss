@@ -16,7 +16,7 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.nav {
+.nav-list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -41,8 +41,8 @@
   position: relative;
   z-index: 5;
 
-  display: none;
-  width: 60px;
+  // display: none;
+  width: 40px;
   height: 40px;
   padding: 0;
 
@@ -55,9 +55,9 @@
   &::after,
   & span {
     position: absolute;
-    right: 0;
-    height: 3px;
-    width: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
 
     background-color: $light-color;
   }
@@ -102,6 +102,50 @@
   }
 }
 
+@media(max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    &__menu-btn {
+      margin-right: 20px;
+    }
+
+    &__nav {
+      position: fixed;
+      top: -50%;
+      left: 0;
+      width: 100%;
+      padding: 0;
+      transition: all 0.3s ease-in-out;
+
+      &--active {
+        left: 0;
+        top: $header-height;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+
+  .nav-list {
+    padding: 20px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+    &__item--logo {
+      position: fixed;
+      top: 10px;
+      left: 20px;
+      width: 40px;
+      padding: 10px;
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+  }
+
+}
 
 //  main 
 
@@ -439,8 +483,6 @@
     margin-bottom: 40px;
   }
 }
-
-.reviews-list {}
 
 .review {
   margin-bottom: 60px;
