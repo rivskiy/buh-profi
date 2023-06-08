@@ -10,6 +10,7 @@
 .header {
   position: fixed;
   top: 0;
+  z-index: 100;
   width: 100%;
   height: $header-height;
   background-color: rgba(0, 0, 0, 0.4);
@@ -339,14 +340,17 @@
     padding-top: 26px;
     background-color: $accent-bg-color;
   }
+
   &__title {
     margin-bottom: 18px;
     text-align: center;
   }
+
   &__img {
     height: 230px;
     object-fit: cover;
   }
+
   &__body {
     flex: 1;
     padding: 40px;
@@ -425,6 +429,50 @@
   }
 }
 
+
+
+//  reviews
+
+.reviews {
+
+  &__tittle {
+    margin-bottom: 40px;
+  }
+}
+
+.reviews-list {}
+
+.review {
+  margin-bottom: 60px;
+
+  &__body {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+}
+
+.author {
+  display: flex;
+  column-gap: 20px;
+
+  &__img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    position: relative;
+
+    &::before {
+      content: '★★★★★';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      font-size: 14px;
+      color: $accent-color;
+    }
+  }
+}
 
 // connection
 

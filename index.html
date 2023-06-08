@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Oswald:wght@400;600&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.min.css">
   <title>БухПрофи</title>
 </head>
@@ -270,59 +271,79 @@
     </section>
     <!--                                reviews  -->
 
-    <section class="reviews section-vertical">
+    <section class="reviews section-vertical container">
       <h2 class="section-title">Отзывы</h2>
       <h3 class="reviews__tittle title">Пару слов от наших клиентов</h3>
-      <ul class="reviews__list reviews-list">
-        <li class="review">
-          <p class="review__body">Работаем с БухПрофи давно. Еще начиная с первого бизнеса. Сейчас передал им бух учет
-            обеих моих компаний. Очень удобно, компетентные специалисты, которые ни разу не подводили.</p>
-          <div class="review__author author">
-            <img src="" alt="" class="author__img">
-            <p class="author__name">Алексей Ривский</p>
-          </div>
-        </li>
-        <li class="review">
-          <p class="review__body">Открывая ООО сразу обратился к БухПрофи за сопровождением и не пожалел! Ответственно
-            отвечают за бухгалтерию, налоговый учет и организацию работы с первичной документацией. Работу за все время
-            могу оценить в 5 баллов за исполнительность, ответственность и внимательность. Большое спасибо!</p>
-          <div class="author">
-            <img src="" alt="" class="author__img">
-            <p class="author__name">Иван Дорохов</p>
-          </div>
-        </li>
-        <li class="review">
-          <p class="review__body">Я долго думала, стоит ли переходить на бухгалтерию на аутсорсинге. Перешла и получила
-            больше свободного времени, еще и сэкономила на бухгалтере. На ходу можно отправляю задания и документы для
-            обработки, не отвлекаясь от работы. Спасибо ребятам из БухПрофи!</p>
-          <div class="author">
-            <img src="" alt="" class="author__img">
-            <p class="author__name">Мария Соболева</p>
-          </div>
-        </li>
-        <li class="review">
-          <p class="review__body">Выражаем благодарность и уважение в целом коллективу компании БухПрофи.
-            Работаем давно, и мы в целом рады, что мы случайно встретились.
-            Очень приятно, когда есть люди, которым можно доверять и понимаешь, что все под контролем надежных профи.
-            Каждая договоренность будет реализована в максимально короткий срок. С высоким уровнем качества выполнения
-            задачи.</p>
-          <div class="author">
-            <img src="" alt="" class="author__img">
-            <p class="author__name">Максим Иванов</p>
-          </div>
-        </li>
-        <li class="review">
-          <p class="review__body">аша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
-            налоговый учет. В процессе сотрудничества, специалисты компании подтвердили свой высокий профессионализм и
-            оперативность в решении сложных вопросов. Сотрудничество оставило положительные впечатления и мы продолжаем
-            успешное сотрудничество уже на протяжении 1,5 лет. Доверяем все бухгалтерские услуги только им и рекомендуем
-            всем!</p>
-          <div class="author">
-            <img src="" alt="" class="author__img">
-            <p class="author__name">Анастасия Кравец</p>
-          </div>
-        </li>
-      </ul>
+      <div class="reviews__list swiper">
+        <ul class="reviews-list swiper-wrapper">
+          <li class="review swiper-slide">
+            <p class="review__body">Работаем с БухПрофи давно. Еще начиная с первого бизнеса. Сейчас передал им бух учет
+              обеих моих компаний. Очень удобно, компетентные специалисты, которые ни разу не подводили.</p>
+            <div class="review__author author">
+              <img src="./images/author-man-1.jpg" alt="" class="author__img">
+              <p class="author__name">Алексей Ривский</p>
+            </div>
+          </li>
+          <li class="review swiper-slide">
+            <p class="review__body">Открывая ООО сразу обратился к БухПрофи за сопровождением и не пожалел! Ответственно
+              отвечают за бухгалтерию, налоговый учет и организацию работы с первичной документацией. Работу за все
+              время
+              могу оценить в 5 баллов за исполнительность, ответственность и внимательность. Большое спасибо!</p>
+            <div class="author">
+              <img src="./images/author-man-2.jpg" alt="" class="author__img">
+              <p class="author__name">Иван Дорохов</p>
+            </div>
+          </li>
+          <li class="review swiper-slide">
+            <p class="review__body">Я долго думала, стоит ли переходить на бухгалтерию на аутсорсинге. Перешла и
+              получила
+              больше свободного времени, еще и сэкономила на бухгалтере. На ходу можно отправляю задания и документы для
+              обработки, не отвлекаясь от работы. Спасибо ребятам из БухПрофи!</p>
+            <div class="author">
+              <img src="./images/author-ladi-1.jpg" alt="" class="author__img">
+              <p class="author__name">Мария Соболева</p>
+            </div>
+          </li>
+          <li class="review swiper-slide">
+            <p class="review__body">Выражаем благодарность и уважение в целом коллективу компании БухПрофи.
+              Работаем давно, и мы в целом рады, что мы случайно встретились.
+              Очень приятно, когда есть люди, которым можно доверять и понимаешь, что все под контролем надежных профи.
+              Каждая договоренность будет реализована в максимально короткий срок. С высоким уровнем качества выполнения
+              задачи.</p>
+            <div class="author">
+              <img src="./images/author-man-3.jpg" alt="" class="author__img">
+              <p class="author__name">Максим Иванов</p>
+            </div>
+          </li>
+          <li class="review swiper-slide">
+            <p class="review__body">аша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
+              налоговый учет. В процессе сотрудничества, специалисты компании подтвердили свой высокий профессионализм и
+              оперативность в решении сложных вопросов. Сотрудничество оставило положительные впечатления и мы
+              продолжаем
+              успешное сотрудничество уже на протяжении 1,5 лет. Доверяем все бухгалтерские услуги только им и
+              рекомендуем
+              всем!</p>
+            <div class="author">
+              <img src="./images/author-ladi-2.jpg" alt="" class="author__img">
+              <p class="author__name">Анастасия Кравец</p>
+            </div>
+          </li>
+          <li class="review swiper-slide">
+            <p class="review__body">аша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
+              налоговый учет. В процессе сотрудничества, специалисты компании подтвердили свой высокий профессионализм и
+              оперативность в решении сложных вопросов. Сотрудничество оставило положительные впечатления и мы
+              продолжаем
+              успешное сотрудничество уже на протяжении 1,5 лет. Доверяем все бухгалтерские услуги только им и
+              рекомендуем
+              всем!</p>
+            <div class="author">
+              <img src="./images/author-ladi-2.jpg" alt="" class="author__img">
+              <p class="author__name">Анастасия Кравец</p>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
     </section>
     <!--                                reviews  -->
 
@@ -360,11 +381,13 @@
               <input class="form__input" type="email" name="email" id="email" placeholder="E-mail" required>
             </label>
             <label>
-              <textarea class="form__comment" name="comment" id="comment" placeholder="Комментарий" cols="30" rows="10"></textarea>
+              <textarea class="form__comment" name="comment" id="comment" placeholder="Комментарий" cols="30"
+                rows="10"></textarea>
             </label>
             <label>
               <input class="form__check" type="checkbox" name="accord" id="accord" required checked>
-              <p class="form__check-accord">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных, в
+              <p class="form__check-accord">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
+                персональных данных, в
                 соответствии
                 с
                 Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей,
@@ -379,6 +402,8 @@
     </section>
 
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

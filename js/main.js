@@ -1,18 +1,18 @@
-                  // MENU
-const menu = document.querySelector('.header__list');
-const menuBtn = document.querySelector('.menu-btn');
-const menuLinks = document.querySelectorAll('.nav__link');
+//                   // MENU
+// const menu = document.querySelector('.header__list');
+// const menuBtn = document.querySelector('.menu-btn');
+// const menuLinks = document.querySelectorAll('.nav__link');
 
-const showMenu = () => {
-  menu.classList.toggle('header__list--active');
-  menuBtn.classList.toggle('menu-btn--active');
-};
+// const showMenu = () => {
+//   menu.classList.toggle('header__list--active');
+//   menuBtn.classList.toggle('menu-btn--active');
+// };
 
-menuBtn.addEventListener('click', showMenu);
+// menuBtn.addEventListener('click', showMenu);
 
-for (let link of menuLinks) {
-  link.addEventListener('click', showMenu)
-};
+// for (let link of menuLinks) {
+//   link.addEventListener('click', showMenu)
+// };
 
 
                   // SLIDER
