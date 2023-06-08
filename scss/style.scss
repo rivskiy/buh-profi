@@ -320,6 +320,8 @@
   }
 
   &__btn {
+    display: block;
+    width: fit-content;
     margin: 0 auto;
   }
 
@@ -750,6 +752,7 @@
     height: 12px;
 
     &-accord {
+      display: block;
       font-size: 11px;
       line-height: 1;
       text-indent: 20px;
