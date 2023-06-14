@@ -78,7 +78,7 @@
         </li>
         <li class="advantages__item">
           <p class="advantages__title sub-title">Высококвалифицированные специалисты</p>
-          <p class="advantages__description">Каждый эксперт в нашей компании проверен и имеет опыт большой работы.</p>
+          <p class="advantages__description">Каждый эксперт в нашей компании проверен и имеет большой опыт работы.</p>
         </li>
         <li class="advantages__item">
           <p class="advantages__title sub-title">Бесконтактное взаимодействие, без ущерба качества работы</p>
@@ -223,11 +223,11 @@
           </tr>
           <tr>
             <td class="table__service">Внесение изменений в учредительные документы</td>
-            <td class="table__cost">3000₽</td>
+            <td class="table__cost">3000 ₽</td>
           </tr>
           <tr>
             <td class="table__service">Добавление ОКВЭД</td>
-            <td class="table__cost">1500₽</td>
+            <td class="table__cost">1500 ₽</td>
           </tr>
           <tr>
             <td class="table__service">Изменение в учредительных документах юридического адреса на другой регион</td>
@@ -320,7 +320,7 @@
             </div>
           </li>
           <li class="review swiper-slide">
-            <p class="review__body">аша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
+            <p class="review__body">Наша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
               налоговый учет. В процессе сотрудничества, специалисты компании подтвердили свой высокий профессионализм и
               оперативность в решении сложных вопросов. Сотрудничество оставило положительные впечатления и мы
               продолжаем
@@ -333,16 +333,11 @@
             </div>
           </li>
           <li class="review swiper-slide">
-            <p class="review__body">аша компания впервые обратилась к БухПрофи с задачей наладить бухгалтерский и
-              налоговый учет. В процессе сотрудничества, специалисты компании подтвердили свой высокий профессионализм и
-              оперативность в решении сложных вопросов. Сотрудничество оставило положительные впечатления и мы
-              продолжаем
-              успешное сотрудничество уже на протяжении 1,5 лет. Доверяем все бухгалтерские услуги только им и
-              рекомендуем
-              всем!</p>
+            <p class="review__body">Обратился по рекомендации и не пожалел. Помогли найти просчёты в налогах и поменяв
+              систему налогообложения я хорошо сэкономил. Знаю что могу на них положиться</p>
             <div class="author">
-              <img src="./images/reviews/author-ladi-2.jpg" alt="" class="author__img">
-              <p class="author__name">Анастасия Кравец</p>
+              <img src="./images/reviews/author-man-4.jpg" alt="" class="author__img">
+              <p class="author__name">Евгений Романов</p>
             </div>
           </li>
         </ul>
@@ -371,25 +366,25 @@
               </ul>
             </div>
           </div>
-          <form class="connection__form form" action="#" method="post" target="_blank">
+          <form class="connection__form form" action="mail.php" method="post">
             <label>
-              <input class="form__input" type="text" name="name" placeholder="Имя" id="name" required>
+              <input class="form__input input-name" type="text" name="name" placeholder="Имя" id="name" required>
             </label>
             <label>
-              <input class="form__input" type="text" name="surname" id="surname" placeholder="Фамилия" required>
+              <input class="form__input input-surname" type="text" name="surname" id="surname" placeholder="Фамилия" required>
             </label>
             <label>
-              <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input class="form__input input-tel" type="tel" name="tel" id="tel" placeholder="Телефон" required>
             </label>
             <label>
-              <input class="form__input" type="email" name="email" id="email" placeholder="E-mail" required>
+              <input class="form__input input-email" type="email" name="email" id="email" placeholder="E-mail" required>
             </label>
             <label>
-              <textarea class="form__comment" name="comment" id="comment" placeholder="Комментарий" cols="30"
+              <textarea class="form__comment input-comment" name="comment" id="comment" placeholder="Комментарий" required cols="30"
                 rows="10"></textarea>
             </label>
             <label>
-              <input class="form__check" type="checkbox" name="accord" id="accord" required checked>
+              <input class="form__check input-check" type="checkbox" name="accord" id="accord" required checked>
               <span class="form__check-accord">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
                 персональных данных, в
                 соответствии
@@ -413,7 +408,9 @@
     </a>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script src="./js/main.min.js"></script>
+  <script src="./js/libs/inputmask.min.js"></script>
+  <script src="./js/libs/just-validate.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
